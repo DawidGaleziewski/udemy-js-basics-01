@@ -43,3 +43,44 @@ console.log(numbersArray);
     // ading to the front
 numbersArray.unshift('add to the beggining');
 console.log(numbersArray);
+
+    //removing from the end
+numbersArray.pop()
+console.log(numbersArray);
+
+    // removing from front
+numbersArray.shift();
+console.log(numbersArray);
+
+    // splice values from array - two values
+numbersArray.splice(2,3);
+console.log(numbersArray);
+
+// reversing the array
+numbersArray.reverse()
+console.log(numbersArray);
+
+// concat two arrays - not mutable needs a variable
+let concatArray = numbersArray.concat(numbersArrays2);
+console.log(concatArray);
+
+// sorting array - not mutable 
+    // this sorts only the first number
+let sortedArray = concatArray.sort();
+console.log(sortedArray);
+
+    // to sort whole array we need function
+    sortedArray = concatArray.sort((x,y)=> {
+        // return y - y  goes another way (descending)
+        return x - y
+    });
+
+    console.log(sortedArray);
+
+// Find function - finds first match
+const under50 = (number) => {
+    return number < 50;
+}
+
+let under50Numbers = sortedArray.find(under50);
+console.log(under50Numbers)
