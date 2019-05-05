@@ -42,3 +42,5 @@ for(var a = 0; a< 10; a++){
 }
 
 console.log(a) //it will change to 10 as it was var
+
+// var will change from block and loop level
